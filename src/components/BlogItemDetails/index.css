@@ -1,0 +1,77 @@
+/* Write your CSS code here */
+.blog-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Style for the Loader container to pass tests */
+.blog-container > div[data-testid="loader"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.blog-info {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.blog-details-title {
+  color: #2f4f4f; /* Dark Slate Gray */
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.author-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.author-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.details-author-name {
+  color: #8e8e8e; /* Gray */
+  font-size: 16px;
+  margin: 0;
+}
+
+.blog-image {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  object-fit: cover;
+}
+
+.blog-content {
+  color: #000000; /* Black */
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left; /* Ensure long content is readable */
+  width: 100%;
+}
+
+/* Adjustments for larger screens (Size >= 768px) */
+@media screen and (min-width: 768px) {
+  .blog-details-title {
+    font-size: 40px;
+  }
+  .blog-image {
+    max-height: 550px;
+  }
+}
